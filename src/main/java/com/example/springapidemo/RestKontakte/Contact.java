@@ -1,6 +1,6 @@
 package com.example.springapidemo.RestKontakte;
 
-public class Customer {
+public class Contact {
     private Long id;
     private String firstName;
     private String lastName;
@@ -10,7 +10,7 @@ public class Customer {
     private String city;
     private String gender;
 
-    public Customer(Long id, String firstName, String lastName, String mail, String phone, String zipcode, String city, String gender) {
+    public Contact(Long id, String firstName, String lastName, String mail, String phone, String zipcode, String city, String gender) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;

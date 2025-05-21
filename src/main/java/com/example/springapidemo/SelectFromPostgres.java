@@ -7,7 +7,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.jdbc.core.JdbcTemplate;
 
-import com.example.springapidemo.RestKontakte.Customer;
+import com.example.springapidemo.RestKontakte.Contact;
 
 import java.util.Arrays;
 import java.util.List;
@@ -31,7 +31,7 @@ public class SelectFromPostgres implements CommandLineRunner {
 			  log.info("Querying for kontakte records where firstname = 'Luca':");
 			    jdbcTemplate.query(
 			        "SELECT id, firstname, lastname FROM public.contacts WHERE firstname = ?",
-			        (rs, rowNum) -> new Customer(rs.getLong("id"), rs.getString("firstname"), rs.getString("lastname"),rs.getString("mail"),
+			        (rs, rowNum) -> new Contact(rs.getLong("id"), rs.getString("firstname"), rs.getString("lastname"),rs.getString("mail"),
 			        		rs.getString("phone"), rs.getString("zipcode"),rs.getString("city"),rs.getString("gender")), "Luda")
 			    .forEach(customer -> log.info(customer.toString()));
 		  }
