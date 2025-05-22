@@ -1,4 +1,4 @@
-package com.example.springapidemo.RestKontakte;
+package com.example.springapidemo.RestKontakte.Models;
 
 public class Contact {
     private Long id;

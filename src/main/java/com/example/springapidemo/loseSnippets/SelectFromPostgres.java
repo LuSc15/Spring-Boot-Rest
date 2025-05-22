@@ -1,4 +1,4 @@
-package com.example.springapidemo;
+package com.example.springapidemo.loseSnippets;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,7 +7,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.jdbc.core.JdbcTemplate;
 
-import com.example.springapidemo.RestKontakte.Contact;
+import com.example.springapidemo.RestKontakte.Models.Contact;
 
 import java.util.Arrays;
 import java.util.List;
