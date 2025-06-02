@@ -1,4 +1,4 @@
-package com.example.springapidemo.RestKontakte;
+package com.example.springapidemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

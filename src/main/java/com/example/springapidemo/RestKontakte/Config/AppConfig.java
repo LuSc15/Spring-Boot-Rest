@@ -7,8 +7,8 @@ import com.example.springapidemo.RestKontakte.ConsumingRest;
 
 @Configuration
 public class AppConfig {
-	@Bean
-	public ConsumingRest consumingRest() {
-		return new ConsumingRest();
-	}
+//	@Bean
+//	public ConsumingRest consumingRest() {
+//		return new ConsumingRest();
+//	}
 }
